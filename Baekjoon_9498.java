@@ -27,5 +27,6 @@ class Baekjoon_9498 {
                 grade = 'F';
         }
         System.out.println(grade);
+        
     }
 }

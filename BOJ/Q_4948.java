@@ -1,4 +1,4 @@
-
+package BOJ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -46,7 +46,7 @@ public class Q_4948 {
 //import java.io.IOException;
 //import java.io.InputStreamReader;
 //
-//public class Q_4948 {
+//public class BOJ.Q_4948 {
 //
 //	public static void main(String[] args) throws IOException {
 //		// n < x <= 2n 을 만족하는 소수 x의 개수 구하기

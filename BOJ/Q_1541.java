@@ -18,7 +18,6 @@ public class Q_1541 {
         StringTokenizer operators = new StringTokenizer(input, "0123456789");
 
 
-        int n = input.length();
         int minSum = 0;
         boolean canBeMinus = false;
 

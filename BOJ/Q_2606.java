@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Q2606 {
+public class Q_2606 {
 
     static LinkedList<Integer>[] graph;
     static boolean[] visited;

@@ -30,7 +30,7 @@ public class Q_2667 {
             }
         }
 
-        // dfs 시작 지점(새 단지) 탐색
+        // dfs 시작지점(새 단지) 탐색
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (map[i][j] == 1 && !visited[i][j]) {

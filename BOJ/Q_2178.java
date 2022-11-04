@@ -64,7 +64,7 @@ public class Q_2178 {
                     if (map[newR][newC] == 1 & !visited[newR][newC]) {
                         visited[newR][newC] = true;
                         queue.offer(new int[]{newR, newC});
-                        prePos[newR][newC] = new int[]{current[0], current[1]}; // 얕은 복사 주의.
+                        prePos[newR][newC] = new int[]{current[0], current[1]};
                     }
                 }
             }

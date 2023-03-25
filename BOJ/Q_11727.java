@@ -33,7 +33,7 @@ public class Q_11727 {
 //    }
 
     // 방식 2 : null 검사 없어서 더 빠름. / ? 시간 차이 없음
-    static int dp[] = new int[1001];
+    static int[] dp = new int[1001];
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

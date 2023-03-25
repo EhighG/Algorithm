@@ -24,7 +24,7 @@ public class Q_11727 {
 //    }
 //
 //    private static int doTiling(int x) {
-//        if (dp[x] != null || x <= 2) {
+//        if (dp[x] != null) { // x <= 2인 경우도 앞 조건식에 포함된다.
 //            return dp[x];
 //        }
 //        else {

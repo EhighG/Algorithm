@@ -30,7 +30,7 @@ public class Q_11726 {
     // Top-down
 //    private static int doTiling(int x) {
 //        if (x <= 2) return dp[x];
-//        if (dp[x] == null) return dp[x] = (doTiling(x-1) + doTiling(x-2)) % 10007; // 이미 방문한 숫자일 때
+//        if (dp[x] == null) return dp[x] = (doTiling(x-1) + doTiling(x-2)) % 10007; // 최초 방문한 숫자일 때
 //
 //        return dp[x];
 //    }

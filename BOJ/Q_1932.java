@@ -34,7 +34,7 @@ public class Q_1932 {
         for (int i = 2; i < triangle.length; i++) {
             int x = i-1;
             // 양 끝
-            dp[i][1] = dp[x][1] + triangle[x][1];
+            dp[i][1] = dp[x][1] + triangle[i][1];
             dp[i][i] = dp[x][x] + triangle[i][i];
 
             // 가운데

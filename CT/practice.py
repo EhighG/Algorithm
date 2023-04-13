@@ -166,3 +166,54 @@ arr = [1,3,5,7,9,11,13,15,17,19]
 # result = binary_search_recur(arr, target, 0, n-1)
 result = binary_search_loop(arr, target)
 print(result if result != None else "해당 원소가 없습니다.")
+
+# # 최단 경로
+# 다익스트라 - 기본
+# v, e = map(int, input().split())
+v, e = 6, 11
+# start = int(input())
+start = 1
+
+INF = int(1e9)
+graph = [[] for i in range(v+1)] # 1 based
+
+# for i in range(e):
+#   edge = tuple(map(int, input().split()))
+#   graph[edge[0]].append((edge[1], edge[2]))
+graph = [[], [(2,2), (3,5), (4,1)], [(3,3), (4,2)], [(2,3), (6,5)], \
+         [(3,3), (5,1)], [(3,1), (6,2)], []]
+
+visited = [False] * (v+1)
+cost = [INF] * (v+1)
+
+def get_min_node():
+  min_cost = INF
+  min_node = -1
+  for node in range(1, v+1):
+    if cost[node] < min_cost and not visited[node]:
+      min_cost = cost[node]
+      min_node = node
+  return min_node
+
+def dijkstra_basic(graph, start):
+  cost[start] = 0
+  visited[start] = True
+  for edge in graph[start]:
+    cost[edge[0]] = edge[1]
+    
+  for i in range(v-1): # start를 뺀 노드개수만큼
+    cur_node = get_min_node()
+    visited[cur_node] = True
+    
+    for edge in graph[cur_node]:
+      new_cost = cost[cur_node] + edge[1]
+      if new_cost < cost[edge[0]]: # new < old:
+        cost[edge[0]] = new_cost # 갱신
+
+dijkstra_basic(graph, start)
+
+for i in cost[1:]:
+  print(i if i != INF else "INFINITY")
+
+def dijkstra_heap(graph, start):
+  return

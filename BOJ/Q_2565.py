@@ -37,4 +37,6 @@ lines = sorted(lines, key=lambda x: x[0])
 
 print(N - LIS(lines))
 
-# 풀이 2:
+# 풀이 2: 기존 dp(O(N^2)) 방식
+# dp = [1] * n으로 초기화
+# 이중 반복문(i = 0~n-1, j = 0~i) 돌면서, dp[i] = max(dp[i], dp[j]+1)

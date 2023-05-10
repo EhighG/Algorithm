@@ -60,7 +60,7 @@ for i in range(k): # O(K)
         # 교체
         will_use = set() # 각 기기의 첫 번째 사용 idx만 비교하기 위함
         pop = -1
-        for j in range(i+1, k):
+        for j in range(i+1, k): # O(K*K)..? 보다 빠름.
             if seq[j] in hole: # 현재 꽂혀있는 것들 중에서 비교해야 하므로
                 pop = seq[j]
                 will_use.add(pop) # 기기별 가장 앞의 idx가 아니면 무시된다.

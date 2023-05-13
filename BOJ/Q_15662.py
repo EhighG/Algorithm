@@ -32,12 +32,6 @@ for k in range(K):
         pre_left = cog[6]
         cog.rotate(d)
         d *= -1
-    # for i in range(start-1, -1, -1):
-    #     if cogs[i][2] == pre_left:
-    #         break
-    #     pre_left = cogs[i][6]
-    #     cogs[i].rotate(d)
-    #     d *= -1
 
     d = D
     # right

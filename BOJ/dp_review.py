@@ -56,4 +56,39 @@ input = sys.stdin.readline
 #              dp[i-3] + arr[i-1] + arr[i] # cur-2 안먹
 #              )
 # print(dp[-1])
-    
+
+# # Q_1463) 1로 만들기
+# n = int(input())
+# dp = [n]*(n+1)
+# dp[0] = 0
+# dp[1] = 0
+#
+# def find_min(target):
+#     if dp[target] == n:
+#         dp[target] = min(find_min(target//3)+(target%3)+1, find_min(target//2)+(target%2)+1)
+#     return dp[target]
+#
+# print(find_min(n))
+
+# Q_11726) 2xn 타일링
+# n = int(input())
+# dp = [0] * (n+1)
+# dp[1] = 1
+# dp[2] = 2
+#
+# for i in range(3, n+1):
+#     dp[i] = (dp[i-1] + dp[i-2]) % 10007
+#
+# print(dp[n])
+
+s1 = [0]*10000
+for i in range(1, 10000):
+    si = str(i)
+    sum = i
+    for j in range(len(si)):
+        sum += int(si[j])
+    s1[i] = sum
+
+for i in range(1, 10000):
+    if s1[i] == 0:
+        print(i)

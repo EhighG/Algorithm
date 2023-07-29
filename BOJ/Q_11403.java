@@ -26,10 +26,8 @@ public class Q_11403 {
         dists = new int[n][n];
         for (int i = 0; i < n; i++) {
             st = new StringTokenizer(br.readLine());
-            String line = br.readLine();
             for (int j = 0; j < n; j++) {
-                int num = Integer.parseInt(st.nextToken());
-                dists[i][j] = num != 1 ? 0 : 1;
+                dists[i][j] = Integer.parseInt(st.nextToken());
             }
         }
         // dp
@@ -54,7 +52,7 @@ public class Q_11403 {
     }
 }
 
-//// 풀이 2 : 196ms, 16588kb / StringTokenizer 삭제, dists 타입 int -> boolean / if문 삭제
+//// 개선 내용 : StringTokenizer 삭제, dists 타입 int -> boolean / if문 삭제 -> 196ms, 16588kb
 //import java.io.BufferedReader;
 //import java.io.IOException;
 //import java.io.InputStreamReader;

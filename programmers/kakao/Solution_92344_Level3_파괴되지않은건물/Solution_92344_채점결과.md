@@ -1,0 +1,1 @@
+![Solution_92344_score.png](Solution_92344_score.png)

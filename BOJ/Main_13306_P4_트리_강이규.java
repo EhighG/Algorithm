@@ -3,12 +3,10 @@ package BOJ;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class Main_13306_P5_트리_강이규 {
+public class Main_13306_P4_트리_강이규 {
 
     static int N, K;
     static int[] root;
